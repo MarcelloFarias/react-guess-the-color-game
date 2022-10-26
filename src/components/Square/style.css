@@ -1,0 +1,22 @@
+.square {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.square:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.square:active {
+  transform: scale(1);
+}
+
+@media (max-width: 440px) {
+  .square {
+    width: 150px;
+    height: 150px;
+  }
+}

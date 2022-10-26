@@ -1,0 +1,56 @@
+header {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #ff8aae;
+}
+
+header h2 {
+  font-size: 3rem;
+}
+
+header button {
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #ffb2a6;
+  color: #fff89a;
+  transition: all 0.2s ease;
+}
+
+header button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background: #fff89a;
+  color: #ffb2a6;
+}
+
+header button:active {
+  transform: scale(0.95);
+  animation: pulse 500ms;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: #ff8aae 0 0 0;
+  }
+  to {
+    box-shadow: #ffb2a600 0 0 0 12px;
+  }
+}
+
+header .output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+@media (max-width: 440px) {
+  header h2 {
+    font-size: 2rem;
+  }
+}
